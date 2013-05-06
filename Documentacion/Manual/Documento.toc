@@ -1,0 +1,32 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Electronica}{3}
+\contentsline {subsection}{\numberline {1.1}Material necesario}{3}
+\contentsline {subsection}{\numberline {1.2}Herramienta necesaria}{4}
+\contentsline {subsection}{\numberline {1.3}Operativa}{5}
+\contentsline {subsubsection}{\numberline {1.3.1}Preprando stepsticks}{5}
+\contentsline {subsubsection}{\numberline {1.3.2}Preparando motores paso a paso}{7}
+\contentsline {subsubsection}{\numberline {1.3.3}Soldando end stop}{8}
+\contentsline {subsubsection}{\numberline {1.3.4}Cargando firmware}{8}
+\contentsline {subsubsection}{\numberline {1.3.5}Ajustando intensidad drivers de potencia}{12}
+\contentsline {section}{\numberline {2}Eje X}{15}
+\contentsline {subsection}{\numberline {2.1}Material necesario}{15}
+\contentsline {subsection}{\numberline {2.2}Herramienta necesaria}{16}
+\contentsline {subsection}{\numberline {2.3}Operativa}{17}
+\contentsline {section}{\numberline {3}Eje Y}{22}
+\contentsline {subsection}{\numberline {3.1}Material necesario}{22}
+\contentsline {subsection}{\numberline {3.2}Herramienta necesaria}{23}
+\contentsline {subsection}{\numberline {3.3}Operativa}{24}
+\contentsline {section}{\numberline {4}Eje Z}{29}
+\contentsline {subsection}{\numberline {4.1}Material necesario}{29}
+\contentsline {subsection}{\numberline {4.2}Herramienta necesaria}{30}
+\contentsline {subsection}{\numberline {4.3}Operativa}{31}
+\contentsline {section}{\numberline {5}Extrsuor}{42}
+\contentsline {subsection}{\numberline {5.1}Material necesario}{42}
+\contentsline {subsection}{\numberline {5.2}Herramienta necesaria}{43}
+\contentsline {subsection}{\numberline {5.3}Operativa}{44}
+\contentsline {section}{\numberline {6}Calibraci\IeC {\'o}n}{50}
+\contentsline {subsection}{\numberline {6.1}Herramienta necesaria}{50}
+\contentsline {subsection}{\numberline {6.2}Calibraci\IeC {\'o}n eje X}{50}
+\contentsline {subsection}{\numberline {6.3}Calibraci\IeC {\'o}n eje Y}{51}
+\contentsline {subsection}{\numberline {6.4}Calibraci\IeC {\'o}n eje Z}{52}
+\contentsline {subsection}{\numberline {6.5}Calibraci\IeC {\'o}n extrusor}{52}

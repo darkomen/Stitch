@@ -32,12 +32,9 @@
 
 //// Calibration variables
 // X, Y, Z, E steps per unit - Metric Prusa Mendel with Wade extruder:
-#define _AXIS_STEP_PER_UNIT {78.63, 78.63, 2560, 931.30}
-// Metric Prusa Mendel with Makergear geared stepper extruder:
-//#define _AXIS_STEP_PER_UNIT {80,80,3200/1.25,1380}
-// MakerGear Hybrid Prusa Mendel:
-// Z axis value is for .9 stepper(if you have 1.8 steppers for Z, you need to use 2272.7272)
-//#define _AXIS_STEP_PER_UNIT {104.987, 104.987, 4545.4544, 1487}
+#define _AXIS_STEP_PER_UNIT {81.6488, 81.8732, 2560, 931.30}
+//#define _AXIS_STEP_PER_UNIT {80.8404, 81.0626, 2560, 931.30}
+//#define _AXIS_STEP_PER_UNIT {80.04, 80.26, 2560, 931.30}
 
 
 //// Endstop Settings
@@ -45,8 +42,8 @@
 // The pullups are needed if you directly connect a mechanical endswitch between the signal and ground pins.
 //If your axes are only moving in one direction, make sure the endstops are connected properly.
 //If your axes move in one direction ONLY when the endstops are triggered, set [XYZ]_ENDSTOP_INVERT to true here:
-const bool X_ENDSTOP_INVERT = false;
-const bool Y_ENDSTOP_INVERT = false;
+const bool X_ENDSTOP_INVERT = true;
+const bool Y_ENDSTOP_INVERT = true;
 const bool Z_ENDSTOP_INVERT = true;
 
 // This determines the communication speed of the printer
@@ -117,9 +114,9 @@ const bool DISABLE_E = false;
 //-----------------------------------------------------------------------
 // Inverting axis direction
 //-----------------------------------------------------------------------
-const bool INVERT_X_DIR = false;
-const bool INVERT_Y_DIR = false;
-const bool INVERT_Z_DIR = false;
+const bool INVERT_X_DIR = true;
+const bool INVERT_Y_DIR = true;
+const bool INVERT_Z_DIR = true;
 const bool INVERT_E_DIR = true;
 
 //-----------------------------------------------------------------------
@@ -148,7 +145,8 @@ const int Z_MAX_LENGTH = 160;
 //-----------------------------------------------------------------------
 const int NUM_AXIS = 4; // The axis order in all axis related arrays is X, Y, Z, E
 #define _MAX_FEEDRATE {400, 400, 2, 45}       // (mm/sec)    
-#define _HOMING_FEEDRATE {3000, 3000, 300}      // (mm/min) !!
+//#define _HOMING_FEEDRATE {3000, 3000, 300}      // (mm/min) !!
+#define _HOMING_FEEDRATE {3500, 3500, 350}      // (mm/min) !!
 #define _AXIS_RELATIVE_MODES {false, false, false, false}
 
 #define MAX_STEP_FREQUENCY 30000 // Max step frequency
@@ -182,13 +180,19 @@ const long min_time_before_dir_change = 30; //milliseconds
 //// Acceleration settings
 //-----------------------------------------------------------------------
 // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
-#define _ACCELERATION 1000         // Axis Normal acceleration mm/s^2
+//#define _ACCELERATION 1000         // Axis Normal acceleration mm/s^2
+#define _ACCELERATION 500         // Axis Normal acceleration mm/s^2
+
 #define _RETRACT_ACCELERATION 2000 // Extruder Normal acceleration mm/s^2
-#define _MAX_XY_JERK 20.0
+//#define _MAX_XY_JERK 20.0
+#define _MAX_XY_JERK 16.0
 #define _MAX_Z_JERK 0.4
 #define _MAX_E_JERK 5.0    // (mm/sec)
-//#define _MAX_START_SPEED_UNITS_PER_SECOND {25.0,25.0,0.2,10.0}
+#define _MAX_START_SPEED_UNITS_PER_SECOND {25.0,25.0,0.2,10.0}
+//#define _MAX_ACCELERATION_UNITS_PER_SQ_SECOND {1500,1500,50,5000}    // X, Y, Z and E max acceleration in mm/s^2 for printing moves or retracts
+//23/4/2013
 #define _MAX_ACCELERATION_UNITS_PER_SQ_SECOND {5000,5000,50,5000}    // X, Y, Z and E max acceleration in mm/s^2 for printing moves or retracts
+
 
 
 // Minimum planner junction speed. Sets the default minimum speed the planner plans for at the end

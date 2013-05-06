@@ -2,7 +2,6 @@ Format is tab separated skeinforge craft settings.
 _Name                          	Value
 WindowPosition	600+0
 Open File for Craft	
-BAK.carve	False
 alteration	False
 bottom	False
 carve	False
@@ -38,11 +37,11 @@ scale	False
 skin	False
 skirt	False
 smooth	False
-speed	True
+speed	False
 splodge	False
 stretch	False
 temperature	False
-tower	False
+tower	True
 unpause	False
 whittle	False
 widen	False

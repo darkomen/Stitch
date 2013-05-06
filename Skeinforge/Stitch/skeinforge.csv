@@ -1,7 +1,7 @@
 Format is tab separated skeinforge settings.
 _Name                          	Value
-WindowPosition	461+24
-Open File for Skeinforge	/Users/santiagolopezpina/Downloads/spinny3-1.stl
+WindowPosition	379+27
+Open File for Skeinforge	/Users/santiagolopezpina/Downloads/0.5mm-thin-wall_aa.stl
 analyze	False
 craft	True
 help	False

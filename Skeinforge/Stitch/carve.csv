@@ -2,15 +2,11 @@ Format is tab separated carve settings.
 _Name                          	Value
 WindowPosition	700+0
 Open File for Carve	
-Enable inward offset	False
-Inward offset along x dimension (mm):	0.3
-Inward offset along y dimension (mm):	0.3
-Inward offset along z dimension (mm):	0.0
 Add Layer Template to SVG	True
-Edge Width over Height (ratio):	1.8
-Extra Decimal Places (float):	2.0
+Edge Width over Height (ratio):	1.555555
+Extra Decimal Places (float):	5.0
 Import Coarseness (ratio):	1.0
-Layer Height (mm):	0.4
+Layer Height (mm):	0.3
 Layers From (index):	0
 Layers To (index):	912345678
 Correct Mesh	True

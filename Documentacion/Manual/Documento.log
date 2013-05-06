@@ -1,0 +1,1024 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 DEC 2012 11:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Documento.tex
+(./Documento.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./Configuracion/articulo.tex
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen105
+)
+\es@datefmt=\count89
+\es@quottoks=\toks15
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen106
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks19
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen115
+\ttl@minus=\dimen116
+\ttl@toksa=\toks23
+\titlewidth=\dimen117
+\titlewidthlast=\dimen118
+\titlewidthfirst=\dimen119
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks24
+\float@box=\box29
+\@float@everytoks=\toks25
+\@floatcapt=\box30
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen120
+\WF@size=\dimen121
+\c@WF@wrappedlines=\count104
+\WF@box=\box31
+\WF@everypar=\toks26
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+)
+\c@ContinuedFloat=\count105
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count106
+\c@subtable=\count107
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count108
+\c@@ppsavesec=\count109
+\c@@ppsaveapp=\count110
+))
+(./Documento.aux)
+\openout1 = `Documento.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen128
+\scratchbox=\box32
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen129
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(./Portada/portada.tex <./Portada/leap.png, id=1, 674.52pt x 222.8325pt>
+File: ./Portada/leap.png Graphic file (type png)
+
+<use ./Portada/leap.png>) [1
+
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Porta
+da/leap.png>] (./Documento.toc)
+\tf@toc=\write3
+\openout3 = `Documento.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./Textos/electronica.tex
+<../../Fotos/2.jpg, id=15, 2601.72pt x 1734.48pt>
+File: ../../Fotos/2.jpg Graphic file (type jpg)
+ <use ../../Fotos/2.jpg>
+[3 <../../Fotos/2.jpg>] <../../Fotos/8.jpg, id=20, 2601.72pt x 1734.48pt>
+File: ../../Fotos/8.jpg Graphic file (type jpg)
+
+<use ../../Fotos/8.jpg> [4 <../../Fotos/8.jpg>]
+<../../Fotos/10.jpg, id=24, 2601.72pt x 1734.48pt>
+File: ../../Fotos/10.jpg Graphic file (type jpg)
+ <use ../../Fotos/10.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 41--47
+
+ []
+
+<../../Fotos/11.jpg, id=25, 2601.72pt x 1734.48pt>
+File: ../../Fotos/11.jpg Graphic file (type jpg)
+ <use ../../Fotos/11.jpg>
+<../../Fotos/13.jpg, id=26, 2601.72pt x 1734.48pt>
+File: ../../Fotos/13.jpg Graphic file (type jpg)
+ <use ../../Fotos/13.jpg>
+[5 <../../Fotos/10.jpg> <../../Fotos/11.jpg>]
+<../../Fotos/16.jpg, id=30, 2601.72pt x 1734.48pt>
+File: ../../Fotos/16.jpg Graphic file (type jpg)
+ <use ../../Fotos/16.jpg>
+<../../Fotos/17.jpg, id=31, 2601.72pt x 1734.48pt>
+File: ../../Fotos/17.jpg Graphic file (type jpg)
+ <use ../../Fotos/17.jpg>
+[6 <../../Fotos/13.jpg> <../../Fotos/16.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+<../../Fotos/19.jpg, id=35, 2601.72pt x 1734.48pt>
+File: ../../Fotos/19.jpg Graphic file (type jpg)
+ <use ../../Fotos/19.jpg>
+<../../Fotos/18.jpg, id=36, 2601.72pt x 1734.48pt>
+File: ../../Fotos/18.jpg Graphic file (type jpg)
+ <use ../../Fotos/18.jpg>
+[7 <../../Fotos/17.jpg> <../../Fotos/19.jpg> <../../Fotos/18.jpg>]
+<../../Fotos/25.png, id=42, 208.78pt x 129.48375pt>
+File: ../../Fotos/25.png Graphic file (type png)
+ <use ../../Fotos/25.png>
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
+
+ []
+
+[8 <../../Fotos/25.png (PNG copy)>]
+<../../Fotos/29.png, id=46, 583.17876pt x 59.22125pt>
+File: ../../Fotos/29.png Graphic file (type png)
+ <use ../../Fotos/29.png>
+<../../Fotos/30.png, id=47, 1015.795pt x 153.57375pt>
+File: ../../Fotos/30.png Graphic file (type png)
+ <use ../../Fotos/30.png>
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+<../../Fotos/26.png, id=48, 485.815pt x 277.035pt>
+File: ../../Fotos/26.png Graphic file (type png)
+ <use ../../Fotos/26.png>
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
+
+ []
+
+<../../Fotos/28.png, id=49, 515.9275pt x 78.2925pt>
+File: ../../Fotos/28.png Graphic file (type png)
+ <use ../../Fotos/28.png>
+[9 <../../Fotos/29.png (PNG copy)> <../../Fotos/30.png (PNG copy)> <../../Fotos
+/26.png (PNG copy)>] <../../Fotos/27.png, id=53, 616.3025pt x 77.28876pt>
+File: ../../Fotos/27.png Graphic file (type png)
+
+<use ../../Fotos/27.png> <../../Fotos/45.png, id=54, 620.3175pt x 99.37125pt>
+File: ../../Fotos/45.png Graphic file (type png)
+
+<use ../../Fotos/45.png>
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
+
+ []
+
+
+Overfull \hbox (13.93063pt too wide) in paragraph at lines 170--171
+\T1/cmr/m/n/12 com-pro-ba-mos que en \T1/cmr/m/it/12 Tools>Board> \T1/cmr/m/n/1
+2 te-ne-mos ele-gi-do san-guino y en \T1/cmr/m/it/12 Tools>Serial
+ []
+
+<../../Fotos/7.jpg, id=55, 754.82pt x 542.025pt>
+File: ../../Fotos/7.jpg Graphic file (type jpg)
+ <use ../../Fotos/7.jpg>
+[10 <../../Fotos/28.png (PNG copy)> <../../Fotos/27.png (PNG copy)> <../../Foto
+s/45.png (PNG copy)>] [11 <../../Fotos/7.jpg>]
+<../../Fotos/31.png, id=62, 250.9375pt x 258.9675pt>
+File: ../../Fotos/31.png Graphic file (type png)
+ <use ../../Fotos/31.png>
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+
+ []
+
+<../../Fotos/20.jpg, id=63, 2601.72pt x 1734.48pt>
+File: ../../Fotos/20.jpg Graphic file (type jpg)
+ <use ../../Fotos/20.jpg>
+<../../Fotos/21.jpg, id=64, 2601.72pt x 1734.48pt>
+File: ../../Fotos/21.jpg Graphic file (type jpg)
+ <use ../../Fotos/21.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 187--203
+
+ []
+
+<../../Fotos/30.jpg, id=65, 84.315pt x 45.771pt>
+File: ../../Fotos/30.jpg Graphic file (type jpg)
+ <use ../../Fotos/30.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 204--210
+
+ []
+
+[12 <../../Fotos/31.png> <../../Fotos/20.jpg> <../../Fotos/21.jpg>]
+<../../Fotos/32.png, id=70, 572.1375pt x 331.2375pt>
+File: ../../Fotos/32.png Graphic file (type png)
+ <use ../../Fotos/32.png>
+Underfull \hbox (badness 10000) in paragraph at lines 211--217
+
+ []
+
+<../../Fotos/23.jpg, id=71, 2601.72pt x 1734.48pt>
+File: ../../Fotos/23.jpg Graphic file (type jpg)
+ <use ../../Fotos/23.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 218--224
+
+ []
+
+[13 <../../Fotos/30.jpg> <../../Fotos/32.png>]) [14 <../../Fotos/23.jpg>]
+(./Textos/eje.x.tex <../../Fotos/46.jpg, id=80, 2601.72pt x 1734.48pt>
+File: ../../Fotos/46.jpg Graphic file (type jpg)
+
+<use ../../Fotos/46.jpg> [15]
+<../../Fotos/47.jpg, id=84, 367.3725pt x 271.414pt>
+File: ../../Fotos/47.jpg Graphic file (type jpg)
+ <use ../../Fotos/47.jpg>
+[16 <../../Fotos/46.jpg> <../../Fotos/47.jpg>]
+<../../Fotos/48.jpg, id=88, 2601.72pt x 1734.48pt>
+File: ../../Fotos/48.jpg Graphic file (type jpg)
+ <use ../../Fotos/48.jpg>
+<../../Fotos/49.jpg, id=89, 2601.72pt x 1734.48pt>
+File: ../../Fotos/49.jpg Graphic file (type jpg)
+ <use ../../Fotos/49.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 42--58
+
+ []
+
+<../../Fotos/50.jpg, id=90, 2601.72pt x 1734.48pt>
+File: ../../Fotos/50.jpg Graphic file (type jpg)
+ <use ../../Fotos/50.jpg>
+<../../Fotos/54.jpg, id=91, 2601.72pt x 1734.48pt>
+File: ../../Fotos/54.jpg Graphic file (type jpg)
+ <use ../../Fotos/54.jpg>
+<../../Fotos/55.jpg, id=92, 2601.72pt x 1734.48pt>
+File: ../../Fotos/55.jpg Graphic file (type jpg)
+ <use ../../Fotos/55.jpg>
+<../../Fotos/56.jpg, id=93, 2601.72pt x 1734.48pt>
+File: ../../Fotos/56.jpg Graphic file (type jpg)
+ <use ../../Fotos/56.jpg>
+<../../Fotos/57.jpg, id=94, 2601.72pt x 1734.48pt>
+File: ../../Fotos/57.jpg Graphic file (type jpg)
+ <use ../../Fotos/57.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 59--97
+
+ []
+
+[17 <../../Fotos/48.jpg> <../../Fotos/49.jpg> <../../Fotos/50.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../../Fotos/54.jpg> <../../Fotos/55.jpg>]
+<../../Fotos/58.jpg, id=101, 2601.72pt x 1734.48pt>
+File: ../../Fotos/58.jpg Graphic file (type jpg)
+ <use ../../Fotos/58.jpg>
+<../../Fotos/59.jpg, id=102, 2601.72pt x 1734.48pt>
+File: ../../Fotos/59.jpg Graphic file (type jpg)
+ <use ../../Fotos/59.jpg>
+<../../Fotos/60.jpg, id=103, 2601.72pt x 1734.48pt>
+File: ../../Fotos/60.jpg Graphic file (type jpg)
+ <use ../../Fotos/60.jpg>
+<../../Fotos/64.jpg, id=104, 2601.72pt x 1734.48pt>
+File: ../../Fotos/64.jpg Graphic file (type jpg)
+ <use ../../Fotos/64.jpg>
+<../../Fotos/65.jpg, id=105, 2601.72pt x 1734.48pt>
+File: ../../Fotos/65.jpg Graphic file (type jpg)
+ <use ../../Fotos/65.jpg>
+<../../Fotos/66.jpg, id=106, 2830.575pt x 2029.5825pt>
+File: ../../Fotos/66.jpg Graphic file (type jpg)
+
+<use ../../Fotos/66.jpg>
+<../../Fotos/109.jpg, id=107, 3092.55376pt x 2116.90875pt>
+File: ../../Fotos/109.jpg Graphic file (type jpg)
+
+<use ../../Fotos/109.jpg> <../../Fotos/110.jpg, id=108, 3276.24pt x 2457.18pt>
+File: ../../Fotos/110.jpg Graphic file (type jpg)
+
+<use ../../Fotos/110.jpg>) [19 <../../Fotos/56.jpg> <../../Fotos/57.jpg> <../..
+/Fotos/58.jpg> <../../Fotos/59.jpg>] [20 <../../Fotos/60.jpg> <../../Fotos/64.j
+pg> <../../Fotos/65.jpg>] [21 <../../Fotos/66.jpg> <../../Fotos/109.jpg> <../..
+/Fotos/110.jpg>] (./Textos/eje.y.tex
+<../../Fotos/33.jpg, id=119, 2601.72pt x 1734.48pt>
+File: ../../Fotos/33.jpg Graphic file (type jpg)
+ <use ../../Fotos/33.jpg>
+[22 <../../Fotos/33.jpg>] <../../Fotos/34.jpg, id=123, 2601.72pt x 1734.48pt>
+File: ../../Fotos/34.jpg Graphic file (type jpg)
+
+<use ../../Fotos/34.jpg> [23 <../../Fotos/34.jpg>]
+<../../Fotos/36b.jpg, id=127, 1127.21124pt x 843.15pt>
+File: ../../Fotos/36b.jpg Graphic file (type jpg)
+
+<use ../../Fotos/36b.jpg>
+<../../Fotos/36c.jpg, id=128, 1120.185pt x 836.12375pt>
+File: ../../Fotos/36c.jpg Graphic file (type jpg)
+
+<use ../../Fotos/36c.jpg>
+<../../Fotos/36d.jpg, id=129, 1025.8325pt x 764.8575pt>
+File: ../../Fotos/36d.jpg Graphic file (type jpg)
+
+<use ../../Fotos/36d.jpg>
+<../../Fotos/36e.jpg, id=130, 1122.1925pt x 835.12pt>
+File: ../../Fotos/36e.jpg Graphic file (type jpg)
+
+<use ../../Fotos/36e.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+<../../Fotos/35.jpg, id=131, 2601.72pt x 1734.48pt>
+File: ../../Fotos/35.jpg Graphic file (type jpg)
+ <use ../../Fotos/35.jpg>
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [24 <../../Fotos/36b.jpg (PNG copy)> <../../Fotos/36c.jpg (PNG copy)> <../../F
+otos/36d.jpg (PNG copy)> <../../Fotos/36e.jpg (PNG copy)>]
+<../../Fotos/36.jpg, id=135, 2601.72pt x 1734.48pt>
+File: ../../Fotos/36.jpg Graphic file (type jpg)
+ <use ../../Fotos/36.jpg>
+[25 <../../Fotos/35.jpg> <../../Fotos/36.jpg>]
+<../../Fotos/37.jpg, id=140, 2601.72pt x 1734.48pt>
+File: ../../Fotos/37.jpg Graphic file (type jpg)
+ <use ../../Fotos/37.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 78--84
+
+ []
+
+<../../Fotos/39.jpg, id=141, 2601.72pt x 1734.48pt>
+File: ../../Fotos/39.jpg Graphic file (type jpg)
+ <use ../../Fotos/39.jpg>
+<../../Fotos/40.jpg, id=142, 2601.72pt x 1734.48pt>
+File: ../../Fotos/40.jpg Graphic file (type jpg)
+ <use ../../Fotos/40.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 85--101
+
+ []
+
+<../../Fotos/41.jpg, id=143, 2601.72pt x 1734.48pt>
+File: ../../Fotos/41.jpg Graphic file (type jpg)
+ <use ../../Fotos/41.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 102--108
+
+ []
+
+[26 <../../Fotos/37.jpg> <../../Fotos/39.jpg> <../../Fotos/40.jpg>]
+<../../Fotos/42.jpg, id=147, 2601.72pt x 1734.48pt>
+File: ../../Fotos/42.jpg Graphic file (type jpg)
+ <use ../../Fotos/42.jpg>
+<../../Fotos/43.jpg, id=148, 2601.72pt x 1734.48pt>
+File: ../../Fotos/43.jpg Graphic file (type jpg)
+ <use ../../Fotos/43.jpg>)
+Underfull \vbox (badness 8019) has occurred while \output is active []
+
+ [27 <../../Fotos/41.jpg> <../../Fotos/42.jpg>] [28 <../../Fotos/43.jpg>]
+(./Textos/eje.z.tex <../../Fotos/67.jpg, id=155, 2601.72pt x 1734.48pt>
+File: ../../Fotos/67.jpg Graphic file (type jpg)
+
+<use ../../Fotos/67.jpg> [29 <../../Fotos/67.jpg>]
+<../../Fotos/67b.jpg, id=159, 3139.73pt x 2216.28pt>
+File: ../../Fotos/67b.jpg Graphic file (type jpg)
+ <use ../../Fotos/67b.jpg>
+[30 <../../Fotos/67b.jpg>] <../../Fotos/69.jpg, id=163, 2601.72pt x 1734.48pt>
+File: ../../Fotos/69.jpg Graphic file (type jpg)
+
+<use ../../Fotos/69.jpg> <../../Fotos/70.jpg, id=164, 2601.72pt x 1734.48pt>
+File: ../../Fotos/70.jpg Graphic file (type jpg)
+
+<use ../../Fotos/70.jpg> <../../Fotos/72.jpg, id=165, 2601.72pt x 1734.48pt>
+File: ../../Fotos/72.jpg Graphic file (type jpg)
+
+<use ../../Fotos/72.jpg> <../../Fotos/78.jpg, id=166, 3276.24pt x 2457.18pt>
+File: ../../Fotos/78.jpg Graphic file (type jpg)
+
+<use ../../Fotos/78.jpg> <../../Fotos/76.jpg, id=167, 3276.24pt x 2457.18pt>
+File: ../../Fotos/76.jpg Graphic file (type jpg)
+
+<use ../../Fotos/76.jpg> <../../Fotos/77.jpg, id=168, 3276.24pt x 2457.18pt>
+File: ../../Fotos/77.jpg Graphic file (type jpg)
+
+<use ../../Fotos/77.jpg>
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+ [31 <../../Fotos/69.jpg> <../../Fotos/70.jpg>] [32 <../../Fotos/72.jpg> <../..
+/Fotos/78.jpg>] <../../Fotos/74.jpg, id=176, 3276.24pt x 2457.18pt>
+File: ../../Fotos/74.jpg Graphic file (type jpg)
+
+<use ../../Fotos/74.jpg> <../../Fotos/75.jpg, id=177, 3276.24pt x 2457.18pt>
+File: ../../Fotos/75.jpg Graphic file (type jpg)
+
+<use ../../Fotos/75.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <../../Fotos/76.jpg> <../../Fotos/77.jpg>]
+<../../Fotos/71.jpg, id=181, 2601.72pt x 1734.48pt>
+File: ../../Fotos/71.jpg Graphic file (type jpg)
+ <use ../../Fotos/71.jpg>
+<../../Fotos/71b.jpg, id=182, 2601.72pt x 1734.48pt>
+File: ../../Fotos/71b.jpg Graphic file (type jpg)
+ <use ../../Fotos/71b.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <../../Fotos/74.jpg> <../../Fotos/75.jpg>]
+<../../Fotos/80.jpg, id=186, 2601.72pt x 1734.48pt>
+File: ../../Fotos/80.jpg Graphic file (type jpg)
+ <use ../../Fotos/80.jpg>
+<../../Fotos/81.jpg, id=187, 2601.72pt x 1734.48pt>
+File: ../../Fotos/81.jpg Graphic file (type jpg)
+ <use ../../Fotos/81.jpg>
+<../../Fotos/82.jpg, id=188, 3276.24pt x 2457.18pt>
+File: ../../Fotos/82.jpg Graphic file (type jpg)
+ <use ../../Fotos/82.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <../../Fotos/71.jpg> <../../Fotos/71b.jpg>]
+<../../Fotos/83.jpg, id=192, 3276.24pt x 2457.18pt>
+File: ../../Fotos/83.jpg Graphic file (type jpg)
+ <use ../../Fotos/83.jpg>
+<../../Fotos/87.jpg, id=193, 2457.18pt x 3276.24pt>
+File: ../../Fotos/87.jpg Graphic file (type jpg)
+ <use ../../Fotos/87.jpg>
+<../../Fotos/88.jpg, id=194, 3276.24pt x 2457.18pt>
+File: ../../Fotos/88.jpg Graphic file (type jpg)
+ <use ../../Fotos/88.jpg>
+[36 <../../Fotos/80.jpg> <../../Fotos/81.jpg> <../../Fotos/82.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37 <../../Fotos/83.jpg>] <../../Fotos/93.jpg, id=202, 1457.445pt x 2404.985pt
+>
+File: ../../Fotos/93.jpg Graphic file (type jpg)
+
+<use ../../Fotos/93.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 170--179
+
+ []
+
+<../../Fotos/94.jpg, id=203, 3276.24pt x 2457.18pt>
+File: ../../Fotos/94.jpg Graphic file (type jpg)
+ <use ../../Fotos/94.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <../../Fotos/87.jpg> <../../Fotos/88.jpg>] [39 <../../Fotos/93.jpg>]
+<../../Fotos/106.jpg, id=210, 3276.24pt x 2457.18pt>
+File: ../../Fotos/106.jpg Graphic file (type jpg)
+ <use ../../Fotos/106.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 189--199
+
+ []
+
+<../../Fotos/107.jpg, id=211, 2457.18pt x 3276.24pt>
+File: ../../Fotos/107.jpg Graphic file (type jpg)
+ <use ../../Fotos/107.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <../../Fotos/94.jpg> <../../Fotos/106.jpg>]
+<../../Fotos/108.jpg, id=215, 3276.24pt x 2457.18pt>
+File: ../../Fotos/108.jpg Graphic file (type jpg)
+ <use ../../Fotos/108.jpg>) [41 <../../Fotos/107.jpg> <../../Fotos/108.jpg>] (.
+/Textos/extrusor.tex
+<../../Fotos/95.jpg, id=219, 3005.2275pt x 2020.54875pt>
+File: ../../Fotos/95.jpg Graphic file (type jpg)
+
+<use ../../Fotos/95.jpg> [42 <../../Fotos/95.jpg>]
+<../../Fotos/96.jpg, id=223, 2902.845pt x 1791.69376pt>
+File: ../../Fotos/96.jpg Graphic file (type jpg)
+
+<use ../../Fotos/96.jpg> [43 <../../Fotos/96.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+ []
+
+<../../Fotos/97.jpg, id=228, 764.8575pt x 536.0025pt>
+File: ../../Fotos/97.jpg Graphic file (type jpg)
+ <use ../../Fotos/97.jpg>
+<../../Fotos/98.jpg, id=229, 559.08875pt x 745.78625pt>
+File: ../../Fotos/98.jpg Graphic file (type jpg)
+
+<use ../../Fotos/98.jpg> <../../Fotos/99.jpg, id=230, 747.79375pt x 554.07pt>
+File: ../../Fotos/99.jpg Graphic file (type jpg)
+
+<use ../../Fotos/99.jpg> <../../Fotos/100.jpg, id=231, 216.81pt x 285.065pt>
+File: ../../Fotos/100.jpg Graphic file (type jpg)
+
+<use ../../Fotos/100.jpg>
+<../../Fotos/101.jpg, id=232, 1123.19624pt x 841.1425pt>
+File: ../../Fotos/101.jpg Graphic file (type jpg)
+
+<use ../../Fotos/101.jpg>
+<../../Fotos/102.jpg, id=233, 1118.1775pt x 830.10126pt>
+File: ../../Fotos/102.jpg Graphic file (type jpg)
+
+<use ../../Fotos/102.jpg> <../../Fotos/103.jpg, id=234, 3276.24pt x 2457.18pt>
+File: ../../Fotos/103.jpg Graphic file (type jpg)
+
+<use ../../Fotos/103.jpg> <../../Fotos/104.jpg, id=235, 3276.24pt x 2457.18pt>
+File: ../../Fotos/104.jpg Graphic file (type jpg)
+
+<use ../../Fotos/104.jpg> <../../Fotos/105.jpg, id=236, 3276.24pt x 2457.18pt>
+File: ../../Fotos/105.jpg Graphic file (type jpg)
+
+<use ../../Fotos/105.jpg>) [44 <../../Fotos/97.jpg (PNG copy)>] [45 <../../Foto
+s/98.jpg (PNG copy)>] [46 <../../Fotos/99.jpg (PNG copy)>] [47 <../../Fotos/100
+.jpg (PNG copy)>] [48 <../../Fotos/101.jpg (PNG copy)> <../../Fotos/102.jpg (PN
+G copy)>] [49 <../../Fotos/103.jpg> <../../Fotos/104.jpg>]
+(./Textos/calibracion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+<../../Fotos/111.jpg, id=256, 1638.12pt x 1228.59pt>
+File: ../../Fotos/111.jpg Graphic file (type jpg)
+ <use ../../Fotos/111.jpg>
+<../../Fotos/112.jpg, id=257, 1638.12pt x 1228.59pt>
+File: ../../Fotos/112.jpg Graphic file (type jpg)
+ <use ../../Fotos/112.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 12--28
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <../../Fotos/105.jpg>] <../../Fotos/119.png, id=262, 618.31pt x 98.3675pt>
+File: ../../Fotos/119.png Graphic file (type png)
+
+<use ../../Fotos/119.png>
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+<../../Fotos/113.jpg, id=263, 1638.12pt x 1228.59pt>
+File: ../../Fotos/113.jpg Graphic file (type jpg)
+ <use ../../Fotos/113.jpg>
+<../../Fotos/114.jpg, id=264, 1638.12pt x 1228.59pt>
+File: ../../Fotos/114.jpg Graphic file (type jpg)
+ <use ../../Fotos/114.jpg>
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+ [51 <../../Fotos/111.jpg> <../../Fotos/112.jpg> <../../Fotos/119.png (PNG copy
+)>]
+<../../Fotos/115.jpg, id=270, 710.655pt x 1168.365pt>
+File: ../../Fotos/115.jpg Graphic file (type jpg)
+
+<use ../../Fotos/115.jpg>
+<../../Fotos/116.jpg, id=271, 659.46375pt x 1204.5pt>
+File: ../../Fotos/116.jpg Graphic file (type jpg)
+
+<use ../../Fotos/116.jpg> <../../Fotos/117.jpg, id=272, 1228.59pt x 1638.12pt>
+File: ../../Fotos/117.jpg Graphic file (type jpg)
+
+<use ../../Fotos/117.jpg> <../../Fotos/118.jpg, id=273, 1228.59pt x 1638.12pt>
+File: ../../Fotos/118.jpg Graphic file (type jpg)
+
+<use ../../Fotos/118.jpg> [52 <../../Fotos/113.jpg> <../../Fotos/114.jpg> <../.
+./Fotos/115.jpg> <../../Fotos/116.jpg>]) [53 <../../Fotos/117.jpg> <../../Fotos
+/118.jpg>] (./Documento.aux) ) 
+Here is how much of TeX's memory you used:
+ 5163 strings out of 493747
+ 73969 string characters out of 3143546
+ 135187 words of memory out of 3000000
+ 8264 multiletter control sequences out of 15000+200000
+ 10742 words of font info for 31 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,11n,43p,960b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvi
+ps/cm-super/cm-super-t1.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public
+/cm-super/sfbi1200.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-
+super/sfrm1095.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1200.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-supe
+r/sfti1200.pfb>
+Output written on Documento.pdf (53 pages, 101297687 bytes).
+PDF statistics:
+ 307 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,39 @@
+ %==========Tipo de documento=========%
+\documentclass[12pt,a4paper,twoside]{article}
+%\documentclass[a4paper,openright,12pt]{report}
+%====================================%
+%====Fichero con configuraciónes%====%
+\input{./Configuracion/articulo.tex} 
+%====================================%
+%==============Documento=============%
+%============Info documento==========%
+ \title{}							 % Título del documento
+ \author{Santiago López}		 				     % Autor del documento
+ \date{\today}						 % Fecha del documento	
+%%===================================%
+
+
+
+\begin{document}
+	\oddsidemargin 0in 
+	%\textwidth 6.75in 
+	\topmargin -0.2in
+	\headheight 0in 
+	\textheight 8.5in
+	\input{./Portada/portada.tex}
+	\newpage{}
+	\tableofcontents{}
+	 \newpage{}
+	 \input{./Textos/electronica.tex}
+	 \newpage{}
+	 \input{./Textos/eje.x.tex}
+	 \newpage{}
+	 \input{./Textos/eje.y.tex}
+	 \newpage{}
+	 \input{./Textos/eje.z.tex}
+	 \newpage{}
+	  \input{./Textos/extrusor.tex}
+	 \newpage{}
+	 \input{./Textos/calibracion.tex}
+\end{document}
+%====================================%
