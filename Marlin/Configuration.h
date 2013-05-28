@@ -282,7 +282,9 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 
 // default settings 
 //CALIBRADO PARA 100mm
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.30176436,80.4147635,2560.00,931.30}  // default steps per unit for ultimaker
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.35826393,80.4147635,2560.00,931.30}  // default steps per unit for ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4147635,80.4147635,2560.00,931.30}  // default steps per unit for ultimaker
+
 //CALIBRADO PARA 10mm
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {82.85126344,83.0577646,4000.00,760*1.1}  // default steps per unit for ultimaker
 
