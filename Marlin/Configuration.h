@@ -5,37 +5,57 @@
 // Advanced settings can be found in Configuration_adv.h 
 // BASIC SETTINGS: select your board type, temperature sensor type, axis scaling, and endstop configuration
 
-//User specified version info of THIS file to display in [Pronterface, etc] terminal window during startup.
+//User specified version info of this build to display in [Pronterface, etc] terminal window during startup.
 //Implementation of an idea by Prof Braino to inform user that any changes made
-//to THIS file by the user have been successfully uploaded into firmware.
-#define STRING_VERSION_CONFIG_H "2012-05-02" //Personal revision number for changes to THIS file.
-#define STRING_CONFIG_H_AUTHOR "erik" //Who made the changes.
-#define STRING_PRINTER "STITCH, PRINTRBOT V2"
+//to this build by the user have been successfully uploaded into firmware.
+#define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
+#define STRING_CONFIG_H_AUTHOR "(darkomen, Stitch)" //Who made the changes.
+
+// SERIAL_PORT selects which serial port should be used for communication with the host.
+// This allows the connection of wireless adapters (for instance) to non-default port pins.
+// Serial port 0 is still used by the Arduino bootloader regardless of this setting.
+#define SERIAL_PORT 0
+
 // This determines the communication speed of the printer
-//#define BAUDRATE 250000
-#define BAUDRATE 115200
+#define BAUDRATE 250000
+//#define BAUDRATE 115200
 
 //// The following define selects which electronics board you have. Please choose the one that matches your setup
-// Gen7 custom (Alfons3 Version) = 10 "https://github.com/Alfons3/Generation_7_Electronics"
-// Gen7 v1.1, v1.2 = 11
-// Gen7 v1.3 = 12
-// Gen7 v1.4 = 13
-// MEGA/RAMPS up to 1.2 = 3
-// RAMPS 1.3 = 33 (Power outputs: Extruder, Bed, Fan)
-// RAMPS 1.3 = 34 (Power outputs: Extruder0, Extruder1, Bed)
-// Gen6 = 5
-// Gen6 deluxe = 51
-// Sanguinololu 1.2 and above = 62
-// Melzi = 63
-// Ultimaker = 7
-// Teensylu = 8
-// Gen3+ =9
+// 10 = Gen7 custom (Alfons3 Version) "https://github.com/Alfons3/Generation_7_Electronics"
+// 11 = Gen7 v1.1, v1.2 = 11
+// 12 = Gen7 v1.3
+// 13 = Gen7 v1.4
+// 3  = MEGA/RAMPS up to 1.2 = 3
+// 33 = RAMPS 1.3 / 1.4 (Power outputs: Extruder, Bed, Fan)
+// 34 = RAMPS 1.3 / 1.4 (Power outputs: Extruder0, Extruder1, Bed)
+// 4  = Duemilanove w/ ATMega328P pin assignment
+// 5  = Gen6
+// 51 = Gen6 deluxe
+// 6  = Sanguinololu < 1.2
+// 62 = Sanguinololu 1.2 and above
+// 63 = Melzi
+// 64 = STB V1.1
+// 7  = Ultimaker
+// 71 = Ultimaker (Older electronics. Pre 1.5.4. This is rare)
+// 8  = Teensylu
+// 80 = Rumba
+// 81 = Printrboard (AT90USB1286)
+// 82 = Brainwave (AT90USB646)
+// 9  = Gen3+
+// 70 = Megatronics
+// 90 = Alpha OMCA board
+// 91 = Final OMCA board
+// 301 = Rambo
 
 #ifndef MOTHERBOARD
 #define MOTHERBOARD 62
 #endif
 
+//// The following define selects which power supply you have. Please choose the one that matches your setup
+// 1 = ATX
+// 2 = X-Box 360 203Watts (the blue wire connected to PS_ON and the red wire to VCC)
 
+#define POWER_SUPPLY 1
 
 //===========================================================================
 //=============================Thermal Settings  ============================
@@ -54,6 +74,9 @@
 // 5 is 100K thermistor - ATC Semitec 104GT-2 (Used in ParCan) (4.7k pullup)
 // 6 is 100k EPCOS - Not as accurate as table 1 (created using a fluke thermocouple) (4.7k pullup)
 // 7 is 100k Honeywell thermistor 135-104LAG-J01 (4.7k pullup)
+// 8 is 100k 0603 SMD Vishay NTCS0603E3104FXT (4.7k pullup)
+// 9 is 100k GE Sensing AL03006-58.2K-97-G1 (4.7k pullup)
+// 10 is 100k RS thermistor 198-961 (4.7k pullup)
 //
 //    1k ohm pullup tables - This is not normal, you would have to have changed out your 4.7k for 1k 
 //                          (but gives greater accuracy and more stable PID)
@@ -95,13 +118,16 @@
 // PID settings:
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define PID_MAX 255 // limits current to nozzle; 255=full current
+#define BANG_MAX 256 // limits current to nozzle while in bang-bang mode; 256=full current
+#define PID_MAX 256 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 256=full current
 #ifdef PIDTEMP
   //#define PID_DEBUG // Sends debug data to the serial port. 
-  //#define PID_OPENLOOP 1 // Puts PID in open loop. M104 sets the output power in %
+  //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
+  #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
+                                  // is more then PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
   #define PID_INTEGRAL_DRIVE_MAX 255  //limit for the integral term
   #define K1 0.95 //smoothing factor withing the PID
-  #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the
+  #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // Ultimaker
@@ -119,6 +145,44 @@
 //    #define  DEFAULT_Ki 2.25
 //    #define  DEFAULT_Kd 440
 #endif // PIDTEMP
+
+// Bed Temperature Control
+// Select PID or bang-bang with PIDTEMPBED.  If bang-bang, BED_LIMIT_SWITCHING will enable hysteresis
+//
+// uncomment this to enable PID on the bed.   It uses the same ferquency PWM as the extruder. 
+// If your PID_dT above is the default, and correct for your hardware/configuration, that means 7.689Hz,
+// which is fine for driving a square wave into a resistive load and does not significantly impact you FET heating.
+// This also works fine on a Fotek SSR-10DA Solid State Relay into a 250W heater. 
+// If your configuration is significantly different than this and you don't understand the issues involved, you proabaly 
+// shouldn't use bed PID until someone else verifies your hardware works.
+// If this is enabled, find your own PID constants below.
+//#define PIDTEMPBED
+//
+//#define BED_LIMIT_SWITCHING
+
+// This sets the max power delived to the bed, and replaces the HEATER_BED_DUTY_CYCLE_DIVIDER option.
+// all forms of bed control obey this (PID, bang-bang, bang-bang with hysteresis)
+// setting this to anything other than 256 enables a form of PWM to the bed just like HEATER_BED_DUTY_CYCLE_DIVIDER did,
+// so you shouldn't use it unless you are OK with PWM on your bed.  (see the comment on enabling PIDTEMPBED)
+#define MAX_BED_POWER 256 // limits duty cycle to bed; 256=full current
+
+#ifdef PIDTEMPBED
+//120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+//from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, argressive factor of .15 (vs .1, 1, 10)
+    #define  DEFAULT_bedKp 10.00
+    #define  DEFAULT_bedKi .023
+    #define  DEFAULT_bedKd 305.4
+
+//120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+//from pidautotune
+//    #define  DEFAULT_bedKp 97.1
+//    #define  DEFAULT_bedKi 1.41
+//    #define  DEFAULT_bedKd 1675.16
+
+// FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+#endif // PIDTEMPBED
+
+
 
 //this prevents dangerous Extruder moves, i.e. if the temperature is under the limit
 //can be software-disabled for whatever purposes by
@@ -173,13 +237,13 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 // Disables axis when it's not being used.
 #define DISABLE_X false
 #define DISABLE_Y false
-#define DISABLE_Z true
+#define DISABLE_Z false
 #define DISABLE_E false // For all extruders
 
 #define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
 #define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR false     // for Mendel set to false, for Orca set to true
-#define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
 
@@ -192,9 +256,9 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define min_software_endstops true //If true, axis won't move to coordinates less than HOME_POS.
 #define max_software_endstops true  //If true, axis won't move to coordinates greater than the defined lengths below.
 // Travel limits after homing
-#define X_MAX_POS 205
+#define X_MAX_POS 220
 #define X_MIN_POS 0
-#define Y_MAX_POS 190
+#define Y_MAX_POS 178
 #define Y_MIN_POS 0
 #define Z_MAX_POS 200
 #define Z_MIN_POS 0
@@ -203,26 +267,38 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
 #define Z_MAX_LENGTH (Z_MAX_POS - Z_MIN_POS)
 
-// The position of the homing switches. Use MAX_LENGTH * -0.5 if the center should be 0, 0, 0
-#define X_HOME_POS 0
-#define Y_HOME_POS 0
-#define Z_HOME_POS 0
+// The position of the homing switches
+//#define MANUAL_HOME_POSITIONS  // If defined, MANUAL_*_HOME_POS below will be used
+//#define BED_CENTER_AT_0_0  // If defined, the center of the bed is at (X=0, Y=0)
+
+//Manual homing switch locations:
+#define MANUAL_X_HOME_POS 0
+#define MANUAL_Y_HOME_POS 0
+#define MANUAL_Z_HOME_POS 0
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {50*60, 50*60, 4*30, 0}  // set the homing speeds (mm/min)
 
 // default settings 
+//CALIBRADO PARA 100mm
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.30176436,80.4147635,2560.00,931.30}  // default steps per unit for ultimaker
+//CALIBRADO PARA 10mm
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {82.85126344,83.0577646,4000.00,760*1.1}  // default steps per unit for ultimaker
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {81.6488, 81.6488, 2560, 931.30}  // default steps per unit for ultimaker 
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)    
-//#define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
-#define DEFAULT_MAX_ACCELERATION      {2000,2000,50,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 3, 25}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {9000,9000,50,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
-#define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
+#define DEFAULT_RETRACT_ACCELERATION  2500   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
-// 
+// Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
+// The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
+// For the other hotends it is their distance from the extruder 0 hotend.
+// #define EXTRUDER_OFFSET_X {0.0, 20.00} // (in mm) for each extruder, offset of the hotend on the X axis
+// #define EXTRUDER_OFFSET_Y {0.0, 5.00}  // (in mm) for each extruder, offset of the hotend on the Y axis
+
+// The speed change that does not require acceleration (i.e. the software might assume it can be done instanteneously)
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
@@ -244,38 +320,69 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 
 //LCD and SD support
 //#define ULTRA_LCD  //general lcd support, also 16x2
+//#define DOGLCD	// Support for SPI LCD 128x64 (Controller ST7565R graphic Display Family)
 //#define SDSUPPORT // Enable SD Card Support in Hardware Console
+//#define SDSLOW // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 
 //#define ULTIMAKERCONTROLLER //as available from the ultimaker online store.
 //#define ULTIPANEL  //the ultipanel as on thingiverse
 
+// The RepRapDiscount Smart Controller (white PCB)
+// http://reprap.org/wiki/RepRapDiscount_Smart_Controller
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
-#ifdef ULTIMAKERCONTROLLER    //automatic expansion
+// The GADGETS3D G3D LCD/SD Controller (blue PCB)
+// http://reprap.org/wiki/RAMPS_1.3/1.4_GADGETS3D_Shield_with_Panel
+//#define G3D_PANEL
+
+// The RepRapDiscount FULL GRAPHIC Smart Controller (quadratic white PCB)
+// http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
+//
+// ==> REMEMBER TO INSTALL U8glib to your ARDUINO library folder: http://code.google.com/p/u8glib/wiki/u8glib
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+
+//automatic expansion
+#if defined (REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
+ #define DOGLCD
+ #define U8GLIB_ST7920
+ #define REPRAP_DISCOUNT_SMART_CONTROLLER
+#endif
+
+#if defined(ULTIMAKERCONTROLLER) || defined(REPRAP_DISCOUNT_SMART_CONTROLLER) || defined(G3D_PANEL)
  #define ULTIPANEL
  #define NEWPANEL
 #endif 
- 
+
+// Preheat Constants
+#define PLA_PREHEAT_HOTEND_TEMP 180 
+#define PLA_PREHEAT_HPB_TEMP 70
+#define PLA_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
+
+#define ABS_PREHEAT_HOTEND_TEMP 240
+#define ABS_PREHEAT_HPB_TEMP 100
+#define ABS_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
+
 
 #ifdef ULTIPANEL
 //  #define NEWPANEL  //enable this if you have a click-encoder panel
   #define SDSUPPORT
   #define ULTRA_LCD
-  #define LCD_WIDTH 20
-  #define LCD_HEIGHT 4
-  
-// Preheat Constants
-  #define PLA_PREHEAT_HOTEND_TEMP 180 
-  #define PLA_PREHEAT_HPB_TEMP 70
-  #define PLA_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
-
-  #define ABS_PREHEAT_HOTEND_TEMP 240
-  #define ABS_PREHEAT_HPB_TEMP 100
-  #define ABS_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
-
+	#ifdef DOGLCD	// Change number of lines to match the DOG graphic display
+		#define LCD_WIDTH 20
+		#define LCD_HEIGHT 5
+	#else
+		#define LCD_WIDTH 20
+		#define LCD_HEIGHT 4
+	#endif
 #else //no panel but just lcd 
   #ifdef ULTRA_LCD
-    #define LCD_WIDTH 16
-    #define LCD_HEIGHT 2    
+	#ifdef DOGLCD	// Change number of lines to match the 128x64 graphics display
+		#define LCD_WIDTH 20
+		#define LCD_HEIGHT 5
+	#else
+		#define LCD_WIDTH 16
+		#define LCD_HEIGHT 2
+	#endif    
   #endif
 #endif
 
